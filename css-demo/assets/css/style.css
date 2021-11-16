@@ -20,12 +20,37 @@ html {
 
 
 
+
+
+/*----------------Utility Classes-----------------*/
+
+.container{
+  width:70vw;
+  max-width:900px;
+  margin:40px auto;
+}
+
+
+
+
+/*----------------Responsive Images--------------*/
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+
+
+
+
 /*-----------------Global Styles------------------*/
 
 body{
     background-color: #f59c7f;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     margin:0;
+    line-height:1.5;
   }
 
 header.primary{
@@ -96,6 +121,65 @@ header.primary nav ul li a:visited{
 header.primary nav ul li a:hover, header.primary nav ul li a:active{
   background-color:rgba(0,0,0,.8);
 }
+
+#intro h2{
+  color:#36A88E;
+  border-bottom: 2px groove #c0c0c0;
+}
+
+#intro{
+  border-bottom: 2px groove #c0c0c0;
+  padding-bottom:.9rem;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  border-bottom: 2px groove #c0c0c0;
+  padding-bottom:2.9rem;
+}
+
+article.post{
+  width:30%;
+  box-shadow:0 4px 8px rgba(0,0,0,.4);
+  padding:.5rem;
+  font-size:.8rem;
+  transition:.5s;
+}
+
+article.post:hover{
+  box-shadow:0 8px 16px rgba(0,0,0,.4);
+}
+
+article.post figure{
+  margin:0;
+}
+
+.post-date, figcaption, .post-meta{
+  text-transform:uppercase;
+  color:#00453E;
+}
+
+article a:link{
+  color:#00453E;
+}
+
+article a:hover, article a:active{
+  text-decoration:none;
+}
+
+aside[role="complementary"]{
+  background-color:#A85F47;
+  color:#FFB69E;
+  padding:1.8rem;
+}
+
+
+
+
+
+
 
 
 
